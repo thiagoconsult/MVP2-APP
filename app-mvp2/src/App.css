@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+/* COMUM PARA TODAS AS PÁGINAS - INÍCIO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 0.1rem;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #E8F1F2;
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* COMUM PARA TODAS AS PÁGINAS - FIM */
+
+/* HOME - INÍCIO */
+
+.section-home {
+  margin-top: 10px;
+}
+
+.home-imagem {
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B98E0;
+  width: 40vw;
+  max-height: 100vh;
+}
+
+.home-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  width: 60vw;
+  max-height: 100vh;
+}
+
+.home-botoes span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  background-color: #006494;
+  border-radius: 10px;
+}
+
+.section-home a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #E8F1F2;
+  width: 350px;
+  height: 200px;
+  letter-spacing: 0.2rem;
+}
+
+/* HOME - FIM */
+
+/* TAREFAS - INÍCIO */
+
+.section-tarefas {
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* NAV - INÍCIO */
+
+.nav-tarefas {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: start;
+}
+
+.nav-acoes {
+  display: flex;
+  width: 20vw;
+}
+
+.nav-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+
+.nav-data-atual {
+  margin-right: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20%;
+}
+
+
+
+.link1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 15px;
+  grid-area: 1/1/2/2;
+}
+
+.link2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: 1/2/2/3;
+  margin-left: 20px;
+}
+
+.nav-tarefas h1, h4 {
+  padding-left: 10px;
+}
+
+.nav-tarefas a {
+  text-decoration: none;
+  color: #13293D;
+  letter-spacing: 0.1rem;
+}
+
+.nav-tarefas a:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+.nav-tarefas a:hover:active {
+  transform: scale(0.9);
+  transition: all 0.4s;
+}
+
+/* NAV - FIM */
+
+/* TAREFAS - FIM */
+
+/* INCLUIR - INÍCIO  */
+
+.section-incluir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80vw;
+  padding: 20px;
+}
+
+q {
+  width: 50%;  
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
+  border-top: #006494 solid 1px;
+}
+
+/* INCLUIR - FIM  */
+
+/* HEADER - INÍCIO  */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #13293D;
+}
+
+header h1 {
+  border: solid 2px #E8F1F2;
+  color:  #E8F1F2;
+  padding: 10px 30px;
+  border-radius: 10px;
+  letter-spacing: 0.4rem;
+}
+
+/* HEADER - FIM  */
+
+/* FOOTER - INÍCIO  */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  height: 100px;
+  background-color: #13293D;
+}
+
+footer h2 {
+  color:  #E8F1F2;
+  letter-spacing: 0.4rem;
+  border-bottom: solid 2px white;
+  padding: 4px;
+
+}
+
+/* FOOTER - FIM  */
+
+@media (min-width: 300px) and (max-width: 999px){
+  
+  /* HEADER - INÍCIO  */
+  header h1 {
+  padding: 10px 30px;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  }
+  /* HEADER - FIM  */
+  /* FOOTER - INÍCIO  */
+  footer h2 {
+    letter-spacing: 0.1rem;
+    border-bottom: solid 1px white;
+    padding: 4px;
+  }
+  /* FOOTER - FIM  */
+
+  /* HOME - INÍCIO */
+
+  .section-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .imagem-fundo {
+    max-height: 300px;
+  }
+  
+  .home-imagem {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    max-height: 100vh;
+    margin-bottom: 20px;
+  }
+
+  .home-botoes {
+    gap: 20px;
+    width: 100%;   
+  }
+  
+  .home-botoes span {
+    width: 300px;
+    height: 70px;
+  }
+  
+  .section-home a {
+    width: 300px;
+    height: 70px;
+    letter-spacing: 0.1rem;
+  }
+  /* HOME - FIM */
+
+  /* NAV - INÍCIO */
+
+.nav-acoes {
+  width: 40vw;
+}
+
+.nav-titulo {
+  justify-content: end;
+  width: 60vw;
+  margin-right: 10px;
+}
+
+/* .link1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 15px;
+  grid-area: 1/1/2/2;
+}
+
+.link2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: 1/2/2/3;
+  margin-left: 20px;
+} */
+
+.nav-tarefas h1, h4 {
+  padding-left: 5px;
+}
+
+.nav-tarefas h1{
+  font-size: 0.9rem;
+}
+
+.nav-tarefas h4{
+  font-size: 0.8rem;
+}
+
+/* NAV - FIM */
+
+}

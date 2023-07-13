@@ -1,0 +1,100 @@
+/* CARD TAREFA - INÍCIO */
+
+.content-tarefa {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    background-image: url("../assets/post-it4.png");
+}
+
+.content-tarefa:hover {
+    transform: scale(1.01);
+    /* transform: rotateZ(-2deg); */
+    transition: all 0.4s;
+}
+
+.titulo-tarefa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #13293D;
+    /* border: solid 1px red; */
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.datas-tarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: solid 1px red; */
+    font-size: 0.7rem;
+    margin: 0px 10px 0 42px;
+}
+.status-tarefa {
+    display: flex;
+    justify-content: center;
+}
+
+.data-tarefa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao-tarefa p {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* border: solid 1px red; */
+    height: 170px;
+    margin: 10px 10px 0 42px;
+    font-size: 1.2rem;
+}
+
+.acoes-tarefa {
+    display: flex;
+    /* border: red solid 1px; */
+    margin: 10px 10px 0 42px;
+}
+
+
+/* CARD TAREFA - FIM */
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+    transition: all 0.4s;
+}
+
+.btn-encerrar {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #006414;
+
+}
+
+.btn-excluir {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: red;
+    /* border: solid 1px blue; */
+    
+}
+
+.Pendente{
+    /* background-color: red;; */
+    color: red;
+}
+
+.Encerrada{
+    /* background-color: #006414; */
+    color: #006414;
+}
+
