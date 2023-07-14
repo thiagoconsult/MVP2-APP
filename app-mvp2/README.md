@@ -2,6 +2,12 @@
 
 Esta APP foi desenvolvida para a entrega do MVP 2 da PUC RIO. Ela permitirá que você cadastre tarefas, excluda e atualize os seus status para realizadas.
 
+## Protótipo interativo feito no Figma
+
+```
+https://www.figma.com/file/eQfWbCp7l1eFAJ6awOGCzC/MVP2-Prot%C3%ADtipo?type=design&node-id=0%3A1&mode=design&t=MqKM3TCEfpc8Zlzn-1
+```
+
 ## Como executar
 
 **É pré requisito que você executa a API.** Ela pode ser encontrada no seguinte link público: 
